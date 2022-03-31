@@ -1,0 +1,16 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "Root.1234",
+  "database": "tracking_api",
+  "synchronize": false,
+  "logging": false,
+  "entities": ["src/domain/entities/**/*.ts"],
+  "migrations": ["database/migration/**/*.ts"],
+  "subscribers": ["database/subscriber/**/*.ts"],
+  "cli": {
+    "migrationsDir": "database/migration"
+  }
+}
